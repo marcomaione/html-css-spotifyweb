@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+#top {
+    width: 992px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+}
+
+/*main*/
+
+.container-main {
+    border: solid 1px black;
+    width: 992px;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    background-color: lightseagreen;
+    width: 200px;
+    height:100vh;
+
+}
+
+.content {
+    background-color: lightsalmon;
+    width: 792px;
+    height: 100vh;
+}
+
+/*footer*/
+
+.bottom {
+    width: 992px;
+    height: 50px;
+    background-color: rgb(62, 70, 78);
+    position: fixed;
+    bottom: 0;
+}
