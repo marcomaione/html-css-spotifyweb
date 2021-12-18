@@ -7,12 +7,38 @@
 /*header*/
 
 #top {
+    align-items: center;
+    display: flex;
     width: 992px;
-    height: 50px;
+    height: 60px;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     position: fixed;
     top: 0;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 40px;
+}
+
+.logo img {
+    margin-left: 5px;
+}
+
+.btn {
+    border: solid 2px white;
+    border-radius: 40px;
+    padding: 5px 20px;
+    margin-right: 5px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    
 }
 
 /*main*/
@@ -25,14 +51,34 @@
 }
 
 .sidebar {
-    background-color: lightseagreen;
+    background-color:black;
     width: 200px;
     height:100vh;
 
 }
 
+.menu-left ul {
+    margin-top: 70px;
+    margin-left: 10px;
+    list-style: none;
+}
+.menu-left ul li {
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.menu-left ul li a {
+    text-decoration: none;
+    color: white;
+}
+.fas {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
 .content {
-    background-color: lightsalmon;
+    background-color:tomato;
     width: 792px;
     height: 100vh;
 }
