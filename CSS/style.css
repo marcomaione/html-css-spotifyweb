@@ -45,7 +45,7 @@
 
 .container-main {
     border: solid 1px black;
-    width: 992px;
+    width:100vw;
     height: 100vh;
     display: flex;
 }
@@ -55,6 +55,12 @@
     width: 200px;
     height:100vh;
 
+}
+
+.menu-left ul li a img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 5px;
 }
 
 .menu-left ul {
@@ -73,6 +79,11 @@
     color: white;
 }
 .fas {
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.far {
     margin-right: 10px;
     font-size: 20px;
 }
@@ -121,6 +132,12 @@
     margin-left: 10px;
 }
 
+.circle img {
+    border-radius: 50%;
+    max-width: 120px;
+    max-height: 120px;
+}
+
 
 /*footer*/
 
@@ -136,11 +153,47 @@
 }
 
 .nav-bottom {
-    background-color: burlywood;
-    border:solid 1px black;
+    border:solid 1px white;
     width: 200px;
-    height:45px ;
+    height:50px ;
 }
+
+.row-2 {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.center {
+    width: 250px;
+    justify-content: space-around;
+}
+
+.player {
+    color: white;
+    margin-top: 5px;
+}
+
+.time {
+    color: white;
+    font-size: 5px;
+    align-self: flex-end;
+}
+
+.time p {
+
+}
+.time-c {
+    display: flex;
+    background-color: rgb(116, 112, 112);
+    width: 200px;
+    border-radius: 10px;
+    height: 3px;
+    align-self: flex-end;
+}
+
+
+
 
 /*media-query*/
 
