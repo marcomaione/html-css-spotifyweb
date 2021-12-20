@@ -103,7 +103,7 @@ main::after {
 }
 
 .cotainer-main {
-    background-color: rgb(9, 9, 26);
+    background-color: rgb(10, 10, 24);
     float: right;
     overflow-y: scroll;
     width: calc(100% - 200px);
@@ -189,9 +189,80 @@ main::after {
 /*footer*/
 
 footer {
-    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 47);
     height: 50px;
     position: relative;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.left img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 5px;
+}
+
+.left h2 {
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+.left p {
+    font-size: 15px;
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.far {
+    margin-left: 10px;
+    color: gray;
+}
+
+.center {
+    display: flex;
+}
+.row-2 {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.center {
+    width: 250px;
+    justify-content: space-between;
+}
+
+.player {
+    color: white;
+    margin-top: 5px;
+}
+
+.time {
+    color: white;
+    font-size: 5px;
+    align-self: flex-end;
+}
+
+.time-c {
+    display: flex;
+    background-color: rgb(116, 112, 112);
+    width: 200px;
+    border-radius: 10px;
+    height: 3px;
+    align-self: flex-end;
+}
+
+.right {
+    display: flex;
+}
+
+.fas {
+    font-size: 20px;
 }
 
 
