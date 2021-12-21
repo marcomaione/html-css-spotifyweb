@@ -67,11 +67,12 @@ main::after {
     max-width: 30px;
     margin-left: 10px;
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 .link ul li span {
     color: gray;
-    vertical-align: center;
+    text-align: center;
     font-size: 13px;
 }
 
@@ -84,6 +85,7 @@ main::after {
 .playlist span i {
     font-size: 40px;
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 .playlist span {
@@ -106,23 +108,53 @@ main::after {
 
 .bottom {
     height: 100px;
-    background-color: gray;
+    background-color:black;
 }
 
-.line {
-    border: solid 0.5px whitesmoke;
-    width: 180px;
-    margin-top: 10px;
+.dowload {
+    width: 80%;
     margin: auto;
+    border-bottom: solid 1px gray;
+    padding: 10px 0px;
 }
 
-.account img {
-    margin-top: 10px;
+#dowload span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#dowload img {
     max-width: 20px;
-    max-height: 20px;
+    vertical-align: middle;
+    
+}
+
+#dowload span {
+    color:gray;
+    font-size: 13px;
     margin-left: 5px;
 }
 
+#img {
+    padding: 15px 20px;
+}
+
+#img:hover {
+    cursor: pointer;
+}
+
+#img img {
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    max-width: 30px;
+    vertical-align: middle;
+}
+
+#img span {
+    color: white;
+    padding: 0px 10px;
+}
 .cotainer-main {
     background-color: rgb(10, 10, 24);
     float: right;
