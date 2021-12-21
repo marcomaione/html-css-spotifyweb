@@ -34,58 +34,79 @@ main::after {
 .top {
     background-color:black;
     height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+.top li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.top span:hover {
+    color:white;
+    cursor: pointer;
+}
+
+.logo-mobile {
+    display: none;
 }
 
 #logo {
+    width: 100%;
+    height: 50px;
     border: solid 1px black;
-    max-width: 150px;
-    max-height: 50px;
+    margin-bottom: 10px;
 }
 
 #logo img {
-    max-width: 140px;
-    max-height: 40px;
-    background-size: cover;
+    max-width: 160px;
+}
+
+.link ul li img {
+    max-width: 30px;
     margin-left: 10px;
-    margin-top: 5px;
-}
-
-
-.nav-left ul {
-    list-style: none;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.nav-left ul li {
-    color: gray;
-    margin-top: 10px;
-}
-.nav-left ul li a {
-    color: gray;
-    text-decoration: none;
-}
-
-.nav-left ul li img {
-    max-height: 20px;
-    max-width: 20px;
-    margin-right:5px;
-}
-.nav-left ul p {
-    color: white;
-    margin:10px 0;
-    font-size: 18px;
-}
-
-.fas {
-    color: gray;
-    font-size: 30px;
     margin-right: 5px;
+}
+
+.link ul li span {
+    color: gray;
+    vertical-align: center;
+    font-size: 13px;
+}
+
+.playlist h3 {
+    color: white;
+    margin-left: 10px;
+    padding: 10px 0px;
+}
+
+.playlist span i {
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+.playlist span {
+    color: gray;
+    margin-left: 10px;
+}
+
+.nuova-playlist {
+    overflow-y: auto;
+}
+
+.nuova-playlist li {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: gray;
+    font-size: 13px;
+    
 }
 
 .bottom {
     height: 100px;
-    background-color: black;
+    background-color: gray;
 }
 
 .line {
@@ -127,9 +148,11 @@ main::after {
     padding: 5px 20px;
     border-radius: 20px;
     margin-top: 8px;
-    
 }
 
+.btn:hover {
+    transform: scale(1.1);
+}
 .btn a {
     color: white;
     text-decoration: none;
@@ -137,19 +160,43 @@ main::after {
     padding: 30px 10px;
 }
 
+.content {
+    margin-top: 75px;
+}
 
-.content ul {
-    list-style: none;
-    margin-top: 70px;
+.nav-center {
     text-align: center;
 }
 
-.content ul li {
+.nav-center ul li {
     display: inline;
-    margin-left: 10px;
-    font-size: 13px;
-    color: gray;
+    margin-right: 10px;
 }
+
+.nav-center ul li a {
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    padding: 5px 0px;
+}
+
+.nav-center ul li a:hover {
+    color: white;
+
+}
+.nav-center ul li a.active::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #94dd25;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .row {
     width: 100%;
@@ -164,8 +211,9 @@ main::after {
     font-size: 25px;
 }
 .items {
+    display: flex;
+    flex-direction: column;
     width: 150px;
-    height: 150px;
     margin-left: 20px;
 }
 
@@ -174,9 +222,22 @@ main::after {
     max-height: 150px;
 }
 
+.items h2 {
+    color: white;
+    margin-top:10px ;
+    font-size: 15px;
+    text-align: center;
+}
+
+.items span {
+    color: gray;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
 .circle {
     width: 150px;
-    height: 150px;
     margin-left: 20px;
     border-radius: 50%;
 }
@@ -186,13 +247,21 @@ main::after {
     max-height: 150px;
     border-radius: 50%;
 }
+
+.circle h2 {
+    color: white;
+    margin-top:10px ;
+    font-size: 15px;
+    text-align: center;
+}
+
 /*footer*/
 
 footer {
     display: flex;
     justify-content: space-between;
     background-color: rgb(45, 45, 47);
-    height: 50px;
+    height: 100px;
     position: relative;
 }
 .left {
