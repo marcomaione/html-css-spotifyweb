@@ -292,16 +292,20 @@ main::after {
     padding-top: 5px;
 }
 
-
-
-
-
-
-.circle {
-    width: 150px;
-    margin-left: 20px;
+.overlay circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
     border-radius: 50%;
 }
+
 
 .circle img {
     max-width: 150px;
@@ -353,6 +357,24 @@ footer .center ul {
 
 footer .center li {
     list-style: none;
+}
+
+.time .current-time, .time .total-time {
+    width: 10%;
+}
+
+.time .progress-bar {
+    width: 80%;
+    background-color: gray;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.time .progress-current {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
 }
 
 
