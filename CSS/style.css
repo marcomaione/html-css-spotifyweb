@@ -323,58 +323,138 @@ main::after {
 /*footer*/
 
 footer {
+    background-color: #333;
+    height: 100px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(45, 45, 47);
-    height: 100px;
-    position: relative;
 }
 
-footer .left {
+footer .album {
     display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
-.album img {
-    width: 40px;
+footer .title {
+    width: 50%;
+    padding-left: 10px;
 }
 
-footer .left, footer .right {
-    width: 250px;
+.title a {
+    color: rgb(156, 152, 152);
+    text-decoration: none;
 }
 
-footer .right ul {
+
+.icon a {
+    color: rgb(156, 152, 152);
+    padding: 5px;
+}
+
+footer .cover {
+    width: 20%;
+}
+
+footer .cover img {
+   width: 100%;
+
+}
+
+footer .controller {
+    width: 50%;
+}
+
+footer .controller ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer .right li {
+footer .controller li {
     list-style: none;
+    margin: 10px;
+    color: white;
 }
 
-footer .center ul {
+.controller .far {
+    font-size: 1.5rem;
+}
+
+.controller .far:hover {
+    transform: scale(1.3);
+}
+
+.controller .time {
     display: flex;
-}
-
-footer .center li {
-    list-style: none;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .time .current-time, .time .total-time {
-    width: 10%;
+    text-align:center;
+    font-size: 12px;
+    color: white;
 }
 
-.time .progress-bar {
+.progress-bar {
     width: 80%;
     background-color: gray;
     height: 5px;
     border-radius: 5px;
 }
 
-.time .progress-current {
+.progress-bar .progress-current {
     width: 20%;
     height: 100%;
     background-color: white;
     border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar .cursor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    right: 0;
+    transform: translateY(-25%);
+    display: none;
+
+}
+
+.progress-bar:hover .cursor {
+    display: block;
+}
+
+.progress-bar:hover .progress-current {
+    background-color:#94dd25 ;
+}
+
+footer .album, footer .audio {
+    width: 250px;
+}
+
+footer .audio .progress-container {
+    width: 80%;
+
+}
+
+
+footer .audio ul {
+    display: flex;
+    align-items: center;
+}
+
+footer .audio i {
+    margin: 10px;
+}
+
+footer .audio li {
+    list-style: none;
+    color: white ;
 }
 
 
