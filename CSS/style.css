@@ -166,7 +166,7 @@ main::after {
     position: fixed;
     width: calc(100% - 200px);
     top: 0;
-    left: 200px;
+    right: 0;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -324,7 +324,7 @@ main::after {
 
 footer {
     background-color: #333;
-    height: 100px;
+    height:100px;
     position: relative;
     display: flex;
     align-items: center;
@@ -462,3 +462,19 @@ footer .audio li {
 
 /*media-query*/
 
+
+@media screen and ( max-width:600px) {
+
+    .sidebar {
+        width:40px;
+    }
+
+    main {
+        width: calc(100% - 40px);
+    }
+
+    .cta {
+        width: calc(100% - 40px);
+    }
+    
+}
