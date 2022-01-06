@@ -15,7 +15,8 @@ body {
 
 /*main*/
 main {
-    height:calc(100% - 50px);
+    width: 100%;
+    height:calc(100% - 100px);
 }
 
 main::after {
@@ -468,13 +469,33 @@ footer .audio li {
     .sidebar {
         width:40px;
     }
-
-    main {
+    .cotainer-main {
+        background-color: rgb(10, 10, 24);
+        float: right;
+        overflow-y: scroll;
         width: calc(100% - 40px);
+        height: 100%;
     }
 
     .cta {
+        position: fixed;
         width: calc(100% - 40px);
+        top: 0;
+        right: 0;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
     }
+
+    .nuova-playlist li {
+        list-style: none;
+        margin-left: 10px;
+        margin-top: 15px;
+        color: gray;
+        font-size: 13px;
+        display: none;
+        
+    }
+
+   
     
 }
