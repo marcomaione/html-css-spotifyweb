@@ -295,10 +295,7 @@ main::after {
 
 .overlay circle {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    left: 0;
+  
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -495,6 +492,23 @@ footer .audio li {
         display: none;
         
     }
+
+    .nome {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        max-width: 30px;
+        margin-left: 10px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
 
    
     
