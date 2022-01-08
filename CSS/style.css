@@ -57,6 +57,7 @@ main::after {
     height: 50px;
     border: solid 1px black;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #logo img {
@@ -176,7 +177,7 @@ main::after {
     border: solid 1px white;
     float: right;
     margin: auto;
-    margin-right: 20px;
+    margin-right: 40px;
     padding: 5px 20px;
     border-radius: 20px;
     margin-top: 8px;
@@ -229,26 +230,43 @@ main::after {
     transform: translateX(-50%);
 }
 
-.row {
-    width: 100%;
+.row-1 {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
-.row h1 {
+.row-1 p {
+    color: gray;
+    padding-left: 10px ;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.row {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-1 h1 {
     color: white;
     padding-left: 10px;
     font-size: 25px;
 }
 
 .items-container {
+    width: calc(100% / 6);
+}
+
+
+.copertina {
     position: relative;
-    width:calc(100% / 6 - 20px);
     margin:0px 10px
 }
 
-.items-container img {
+.copertina img {
     width: 100%;
 }
 
@@ -265,7 +283,7 @@ main::after {
     opacity: 0;
 }
 
-.items-container:hover .overlay {
+.copertina:hover .overlay {
     opacity: 1;
     cursor: pointer;
 }
@@ -293,30 +311,41 @@ main::after {
     padding-top: 5px;
 }
 
-.overlay circle {
+.overlay-circle {
     position: absolute;
-  
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    border-radius: 50%;
+}
+
+.copertina-circle {
+    position: relative;
+    margin:0px 10px
 }
 
 
-.circle img {
-    max-width: 150px;
-    max-height: 150px;
+.copertina-circle img {
+    width: 100%;
     border-radius: 50%;
 }
 
-.circle h2 {
+.copertina-circle:hover .overlay-circle {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.overlay-circle i {
+    font-size: 50px;
     color: white;
-    margin-top:10px ;
-    font-size: 15px;
-    text-align: center;
 }
+
 
 /*footer*/
 
@@ -374,6 +403,7 @@ footer .controller li {
     list-style: none;
     margin: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .controller .far {
@@ -420,6 +450,7 @@ footer .controller li {
     right: 0;
     transform: translateY(-25%);
     display: none;
+    cursor: pointer;
 
 }
 
@@ -453,6 +484,7 @@ footer .audio i {
 footer .audio li {
     list-style: none;
     color: white ;
+    cursor: pointer;
 }
 
 
@@ -507,6 +539,13 @@ footer .audio li {
         margin-left: 10px;
         margin-right: 5px;
         vertical-align: middle;
+    }
+    .dowload {
+        width: 80%;
+        margin: auto;
+        border-bottom: solid 1px gray;
+        padding: 10px 0px;
+        display: none;
     }
 
 
