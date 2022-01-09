@@ -270,6 +270,8 @@ main::after {
     width: 100%;
 }
 
+/*bonus*/
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -281,8 +283,10 @@ main::after {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    
+    transition: all 1.5s ease 0s;
 }
+
+/*bonus*/
 
 .copertina:hover .overlay {
     opacity: 1;
@@ -312,6 +316,8 @@ main::after {
     padding-top: 5px;
 }
 
+/*bonus*/
+
 .overlay-circle {
     position: absolute;
     bottom: 0;
@@ -323,8 +329,10 @@ main::after {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    
+    transition: all 1.5s ease 0s;
 }
+
+/*bonus*/
 
 .copertina-circle {
     position: relative;
@@ -453,8 +461,19 @@ footer .controller li {
     transform: translateY(-25%);
     display: none;
     cursor: pointer;
-    
+
 }
+
+/*bonus*/
+.progress-current {
+    transition: all 2s ease 0s;
+}
+
+.progress-current:active {
+    width: 98%;
+}
+
+/*bonus*/
 
 .progress-bar:hover .cursor {
     display: block;
@@ -503,7 +522,7 @@ footer .audio li {
 }
 
 @media screen and ( max-width:650px) {
-
+    
     .items-container {
         width: calc(100% / 2);
     }
@@ -569,4 +588,3 @@ footer .audio li {
         display: none;
     }
 }
-
